@@ -61,7 +61,6 @@ const Decision = (condition) => {
     } else if (condition === 'Loss') {   
         compNum += 1;    
     } 
-  //  alert(`You picked ${playerChoice}, the computer picked ${compChoice}. Round ${condition}!`);
     score.textContent = `You : ${num} Computer : ${compNum}`;
     showEndScreen(num,compNum);
     
@@ -78,22 +77,6 @@ const PlayRound = (playerChoice) => {
     Decision('Tie');   
 }
 
-// let stopGameCheck = (num,compNum) =>{
-//     if(num === 5) {
-//         alert("You won the game!");
-
-//             // document.getElementById("rock").disabled = true;
-//             // document.getElementById("paper").disabled = true;
-//             // document.getElementById("scissors").disabled = true;
-//             // screenPrompt.textContent = "Click 'Play again' to play a new game";
-//     } else if (compNum === 5) {
-//         alert("You loss the game!");
-//             // document.getElementById("rock").disabled = true;
-//             // document.getElementById("paper").disabled = true;
-//             // document.getElementById("scissors").disabled = true;
-//             // screenPrompt.textContent = "Click 'Play again' to play a new game";
-//     } 
-// }
 let endScreen = document.querySelector('.end-screen')
 let endScreenTitle = document.querySelector('.end-title')
 let endScreenDescription = document.querySelector('.end-description')
