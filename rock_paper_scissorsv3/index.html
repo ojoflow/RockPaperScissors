@@ -5,14 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"> 
+    
     <title>Document</title>
 </head>
 <body>
-    <h1>Pick One!</h1>
+    <h1>Pick! First to five points wins!</h1>
+    <h3 class="score">You: Computer: </h3>
     <div class="card-container">
-        <div id='#rock'>ROCK</div>
-        <div id='#paper'>PAPER</div>
-        <div id='#scissors'>SCISSORS</div>
+        <div id='rock'>
+            <img src="rock.png">
+        </div>
+        <div id='paper'>
+            <img src="paper.png">
+        </div>
+        <div id='scissors'>
+            <img src="scissors.jpg">
+        </div>
+        
     </div>
+     <!-- Endgame Screen -->
+     <div class="end-screen">
+        <h2 class="end-title">You won!</h2>
+        <p class="end-description">You won against the computer!</p>
+        <button class="play">Play again!</button>
+        <script src="game.js" defer></script>
 </body>
 </html>
