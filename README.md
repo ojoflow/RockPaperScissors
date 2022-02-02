@@ -1,2 +1,2 @@
 # rockPaperScissors
-These are the rock, paper, scissor iterations done by me as I advance in my web development journey. 
+This is the rock, paper, scissors game from The Odin Projec
