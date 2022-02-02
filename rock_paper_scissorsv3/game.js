@@ -35,13 +35,6 @@ scissors.addEventListener('click',
         
     });
 
-play.addEventListener('click',
-    () => {
-            num = 0;
-            compNum = 0;
-            
-        });
-
 let randomNumber = () => {
         return Math.floor(Math.random() * (Math.floor(4) - Math.ceil(1)) +  Math.ceil(1));
        
@@ -119,6 +112,8 @@ function showEndScreen(num,compNum) {
         endScreenAnim()
     } else if (compNum === 5) {
         endScreenTitle.textContent = "You lost!"
+        endScreenDescription.textContent = "You lost against the computer!"
         endScreenAnim()
     }
 }
+play.addEventListener('click', () => window.location.reload())
